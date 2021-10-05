@@ -43,13 +43,13 @@ h3 {
 
 p {
 	font-size: 0.875em;
-	line-height: 1.3125em;
+	line-height: 21px;
 }
 
 /*The widths are in a percentage!*/
 header {
 	
-	border-bottom:0.1875em solid #77a466;
+	border-bottom:3px solid #77a466;
 	justify-content:center;
 	align-items:center;
     width:100%; 
@@ -60,7 +60,8 @@ header {
 header h1 {
 	
 	margin: 0;
-	padding: 2.375em 0;
+	padding: 38px 20px 20px 20px;
+	border-bottom: 3px solid #77a466;
 	width:100%;
 }
 header h1 span {
@@ -70,7 +71,7 @@ header h1 span {
 
 header nav {
 	width:100%;
-	padding: 2.875em 0;
+	padding: 20px ;
 }
 header nav ul {
 	margin: 0;
@@ -80,12 +81,9 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 0.625em;
+	padding: 10px 0;
 	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+
 
 }
 header nav ul li a{
@@ -110,7 +108,7 @@ header nav ul li a{
 
 .main-title h2 {
 	text-align: left;
-	padding: 0.3125em 0;
+	padding: 5px 0;
 	color: #77a466;
 }
 .main-title p {
@@ -123,21 +121,8 @@ header nav ul li a{
 .section-two,
 .section-three {
 	width: 100%;
-	border-top: 0.0625em solid #eee;
-}
-
-.section-one h3 {
-	padding: 0.625em0;
-}
-
-.section-two {
-	border-left: 0.0625em solid #eee;
-	border-right: 0.0625em solid #eee;
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 0.0625em 1.875em;
+	border-top: 1px solid #eee;
+	
 }
 
 .menu {
@@ -145,14 +130,14 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 0.625em 0;
+	padding: 10px 0;
 	color:#77a466;
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 1.3125 em;
+	line-height: 1.3125em;
 }
 
 .address {
@@ -162,11 +147,12 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	border-top: 0.1875em solid #eee;
+	border-top: 3px solid #eee;
 	width: 100%;
 	display: flex;
-	text-align: center;
+	align-items: center;
 	justify-content: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -174,3 +160,35 @@ footer span {
 	color: #77a466;
 	font-size: 0.8750em;
 }
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+	.bottom-section{
+		justify-content: space-between;
+		align-items: flex-start;
+		border:1px solid #eee;
+
+	}
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+	header{
+		justify-content:space-between;
+	}
+
+    header h1 {
+        width: 30%;
+        padding: 0;
+        border-bottom: none;
+        text-align: left;
+    }
+
+    header nav {
+        width: 40%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
